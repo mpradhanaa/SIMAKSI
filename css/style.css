@@ -1,0 +1,442 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-image: url('../foto/header 2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    padding: 20px 0 0 30px;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 30px 20px 30px;
+    background: rgba(64, 145, 108, 0.85); 
+    border-radius: 18px;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    margin-top: 40px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.page-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    box-shadow: none;
+}
+
+.page-header-content h3,
+.page-header-content p {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.page-header p {
+    color: #e9ecef;
+    margin-top: 10px;
+    font-size: 1.05rem;
+}
+
+/* Navigation */
+.nav-header {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;   
+    padding: 0;
+    margin-bottom: 30px;
+}
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 24px;
+}
+
+.nav-user-name {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    background: #e9ecef;
+}
+.nav-header-ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-header-li {
+    position: relative;
+    font-weight: 500;
+}
+
+.nav-header-li > a {
+    background: #40916c;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-header-li > a:hover,
+.nav-header-li > a:focus {
+    background: #2d6a4f;
+    color: #b7e4c7;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: #fff;
+    min-width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    z-index: 100;
+    padding: 8px 0;
+    margin: 0;
+    animation: dropdownFade 0.3s;
+}
+
+@keyframes dropdownFade {
+    from { opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: #222;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 0 8px;
+    transition: background 0.2s, color 0.2s;
+    font-size: 1rem;
+}
+
+.dropdown-menu li a:hover {
+    background: #40916c;
+    color: #fff;
+}
+
+.nav-header-li.dropdown:hover > .dropdown-menu,
+.nav-header-li.dropdown:focus-within > .dropdown-menu {
+    display: block;
+}
+
+.nav-header-li.dropdown > a::after {
+    content: " ▼";
+    font-size: 0.8em;
+    color: #b7e4c7;
+    margin-left: 6px;
+}
+
+/* Nav List */
+
+.nav-list-ul form input[type="text"] {
+    padding: 8px 14px;
+    border: 1.5px solid #b7e4c7;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #f8fafb;
+    color: #222;
+    outline: none;
+    transition: border 0.2s;
+    margin-right: 8px;
+    margin-top: 30px;
+}
+
+.nav-list-ul form input[type="text"]:focus {
+    border: 1.5px solid #40916c;
+    background: #fff;
+}
+
+.nav-list-ul form button[type="submit"] {
+    padding: 10px 20px;
+    background: #40916c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.nav-list-ul form button[type="submit"]:hover {
+    background: #2d6a4f;
+}
+
+
+
+/* Card Gallery */
+.container-fluid {
+    display: flex;
+    justify-content: center;      
+    align-items: center;
+    margin: 70px 0 30px 0;       
+    padding: 0;
+}
+
+.tab-content {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;      
+    gap: 30px;                     
+}
+
+.col-md-3 {
+    flex: 0 0 150px;              /* Lebar tetap tiap kolom */
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.card-img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+
+/* Main Content */
+.container-main {
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+    padding: 0 30px;
+}
+
+.row-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-md-12 {
+    flex: 1 1 100%;
+}
+
+.card-header {
+    background: #40916c;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Timeline Tata Cara */
+.timeline-custom {
+    margin: 0;
+    padding: 0;
+}
+
+.outer-custom {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.card-custom {
+    background: #e9ecef;
+    border-left: 5px solid #40916c;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.info-custom h3 {
+    margin: 0 0 8px 0;
+    color: #2d6a4f;
+    font-size: 1.1rem;
+}
+
+.info-custom p {
+    margin: 0;
+    color: #333;
+    font-size: 0.98rem;
+}
+
+/* Syarat dan ketentuan */
+
+.s-k{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kolom syarat dan ketentuan */
+.columns {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch; 
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1 1 300px;
+    background: #f8fafb;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+ 
+}
+
+.column h4 {
+    margin-top: 0;
+    color: #40916c;
+    font-size: 1.08rem;
+}
+
+.note {
+    color: #888;
+    font-size: 0.92em;
+}
+
+/* Footer */
+.footer {
+    background: #40916c;
+    color: #fff;
+    padding: 24px 0 18px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.footer-icon {
+    color: #fff;
+    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-icon-img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: block;
+}
+
+.footer-icon-img-wa{
+    width: 45px;
+    height: 30px;
+}
+.footer-icon:hover {
+    color: #b7e4c7;
+}
+
+.copyright {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .row, .row-main {
+        flex-direction: column;
+        gap: 0;
+    }
+    .col-md-3, .col-md-12, #tatacara-esimaksi {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .container-main, .container-fluid {
+        padding: 0 10px;
+    }
+    .columns {
+        flex-direction: column;
+        gap: 0;
+    }
+    .column {
+        min-width: 0;
+    }
+}

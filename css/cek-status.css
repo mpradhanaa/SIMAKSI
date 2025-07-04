@@ -1,0 +1,53 @@
+body {
+        background: #b7e4c7;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cek-status-container {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        padding: 32px 28px 28px 28px;
+        max-width: 400px;
+        width: 100%;
+        margin: 60px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cek-status-title {
+        color: #40916c;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    .alert-success {
+        background: #38b000;
+        color: #fff;
+        border-radius: 6px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.08rem;
+    }
+    .alert-warning {
+        background: #f9c74f;
+        color: #222;
+        border-radius: 6px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.08rem;
+    }
+    .alert-danger {
+        background: #d90429;
+        color: #fff;
+        border-radius: 6px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.08rem;
+    }
